@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Nunito:wght@200;400;500;600;700;800;900&family=Oleo+Script+Swash+Caps&family=Roboto:wght@400;700&display=swap');
+/*Common styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+}
+
+/*Convert 1 ram en 10px, for that we have to decrese the font size of html and make it 62.5*/
+html {
+    font-size: 62.5%;
+}
+/*End of common styles*/
+
+/*Section 1*/
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex; /*Para alinear el contenido todo en una fila de forma horizontal*/
+    flex-direction: column; /*Para colocar los elementos en columnas una debajo de la otra*/
+    align-items: center; /*Para alinear el contenido al centro*/
+    justify-content: space-evenly; /*Para colocar espacio entre los elementos*/
+}
+
+.section-heading {
+    font-size: 12rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize; /*Para hacer mayúscula la primer letra de cada palabra*/
+    letter-spacing: 0.5rem; /*Para crear espacio entre las letras*/
+    text-shadow: .3rem .3rem .3rem #000; /*Para darle una sombra al texto y color*/
+}
+
+.section-1-icons i {
+    font-size: 35rem; /*Tamaño de los íconos*/
+    color: #a79a2d; /*Color de los íconos*/
+    position: absolute; /*Para posicionar los íconos en la pantalla*/
+    transform: translate(-50%, -50%) scale(0);/*Para colocar el ícono hacia arriba y hacia la izquierda para que 
+    quede centralizado. Esta función nos permite mover el elemento en dirección vertical u horizontal*/
+    /*Para esconder los íconos por defecto, debemos establecer la escala en 0*/
+    text-shadow: .2rem .2rem .2rem #000; /*Para darle sombra a los íconos y color*/
+    transition: transform 0.3s;
+}
+
+.section-1-icons i.change {  /*Para hacer visible el ícono debemos establecer la escala en 1 en esta nueva sección*/
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s 0.3s; /*Para darle un efecto a la transición entre un ícono y el otro.*/
+}
+/*End of section 1*/
