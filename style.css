@@ -14,6 +14,16 @@
 html {
     font-size: 62.5%;
 }
+
+.section-heading {
+    font-size: 12rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize; /*Para hacer mayúscula la primer letra de cada palabra*/
+    letter-spacing: 0.5rem; /*Para crear espacio entre las letras*/
+    text-shadow: 0.3rem 0.3rem 0.3rem #000; /*Para darle una sombra al texto y color*/
+}
 /*End of common styles*/
 
 /*Section 1*/
@@ -27,16 +37,6 @@ html {
     justify-content: space-evenly; /*Para colocar espacio entre los elementos*/
 }
 
-.section-heading {
-    font-size: 12rem;
-    font-weight: 900;
-    color: #fff;
-    text-align: center;
-    text-transform: capitalize; /*Para hacer mayúscula la primer letra de cada palabra*/
-    letter-spacing: 0.5rem; /*Para crear espacio entre las letras*/
-    text-shadow: .3rem .3rem .3rem #000; /*Para darle una sombra al texto y color*/
-}
-
 .section-1-icons i {
     font-size: 35rem; /*Tamaño de los íconos*/
     color: #a79a2d; /*Color de los íconos*/
@@ -44,7 +44,7 @@ html {
     transform: translate(-50%, -50%) scale(0);/*Para colocar el ícono hacia arriba y hacia la izquierda para que 
     quede centralizado. Esta función nos permite mover el elemento en dirección vertical u horizontal*/
     /*Para esconder los íconos por defecto, debemos establecer la escala en 0*/
-    text-shadow: .2rem .2rem .2rem #000; /*Para darle sombra a los íconos y color*/
+    text-shadow: 0.2rem 0.2rem 0.2rem #000; /*Para darle sombra a los íconos y color*/
     transition: transform 0.3s;
 }
 
@@ -53,3 +53,61 @@ html {
     transition: transform 0.3s 0.3s; /*Para darle un efecto a la transición entre un ícono y el otro.*/
 }
 /*End of section 1*/
+
+/*Section 2*/
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    display: flex; /*Coloca los elementos uno al lado del otro*/
+    flex-direction: column; /*Entonces en este caso necesitamos cambiar la dirección de los elementos y colocarlos 
+    en columnas*/
+    justify-content: space-between; /*Coloca espacio entre los elementos del flex*/
+    padding: 10rem 0;  /*Crear un poco de espacio DENTRO DE LA SECTION usando padding */
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.card {
+    width: 30rem;
+    background-color: #a79a2d;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1rem 1rem 1rem #400;
+}
+
+.card-image {
+    width: 100%;
+} 
+
+.card-name {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #111;
+    margin: 2rem 0;
+    text-shadow: 0.15rem 0.15rem 0.15rem #000;
+}
+
+.card-btn {
+    width: 70%;
+    background-color: #111;
+    color: #888;
+    border-radius: 5rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+    border: none;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    box-shadow: -0.2rem -0.2rem -0.2rem #000;
+}
+
+/*End of the section 2*/
